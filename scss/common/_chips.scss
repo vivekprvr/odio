@@ -1,0 +1,48 @@
+
+// rounded button
+
+// $btn-icons: ("sm": 32px, "md": 40px, "lg": 48px);
+
+// @each $name, $size in $btn-icons {
+//     .btn-icon-#{$name} {
+//         width:$size;
+//         height:$size;
+//         border-radius: 100px;
+//         padding: 0;
+//         display: grid;
+//         place-content: center;
+//     }
+// }
+
+
+// nav-pills
+
+.rounded-chips {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    margin: 0;
+
+    li {
+        list-style: none;
+        a {
+            padding: 2px 8px;
+            border-radius: 100px;
+            background: var(--bs-body-bg-rgb);
+            color: var(--bs-body-color);
+            border: 1px solid var(--bs-dark-border-subtle);
+        }
+        &.active {
+            a {
+                background: var(--bs-primary);
+                color: var(--bs-emphasis-color);
+            }
+        }
+
+        &:hover {
+            a {
+
+            }
+        }
+    }
+}

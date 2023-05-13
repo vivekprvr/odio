@@ -1,0 +1,6 @@
+@for $i from 1 to 10 {
+    .ic-#{$i * 8} {
+        width: $i * 8px;
+        height: $i * 8px;
+    }
+}

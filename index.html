@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="scss/custom-bootstrap.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="main-header bg-black">
+            <svg class="ic-24 text-light">
+                <use xlink:href="img/icon_sprite.svg#ic-menu" />
+            </svg>
+            <a href="/" class="main-logo">
+                <img src="/img/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex gap-4 align-items-center">
+                <a href="" class="cursor-pointer">
+                    <svg class="ic-24 text-light">
+                        <use xlink:href="img/icon_sprite.svg#ic-bell" />
+                    </svg>
+                </a>
+                <div class="dropdown">
+                    <div class="avatar-5 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/avatar.jpeg" alt="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-section bg-black">
+            <aside class="main-left-menu h-100 bg-black">
+                <ul class="main-menu pt-5">
+                    <li class="active">
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-home" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-schedule" />
+                            </svg>
+                            Schedule
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-program" />
+                            </svg>
+                            Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-media" />
+                            </svg>
+                            Media
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-users" />
+                            </svg>
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-settings" />
+                            </svg>
+                            Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-online" />
+                            </svg>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="p-4 main-content bg-dark page-dashboard">
+
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <h3 class="fw-light text-white">Welcome to Club FM</h3>
+                    </div>
+                    <div class="col-6 d-grid justify-content-end">
+                        <div class="bg-dark-subtle p-1 rounded-5">
+                            <div class="bg-body rounded-5 border-black border-1 auto-fr gap-1">
+                                <div class="p-1">
+                                    <svg class="ic-24 text-success">
+                                        <use xlink:href="img/icon_sprite.svg#ic-online" />
+                                    </svg>
+                                    <span class="f-14 fw-bold text-success">On Air</span>
+                                </div>
+                                <div class="border-start border-black h-100 p-1 ps-2 pe-2">
+                                    <span class="f-15 fw-bold text-white">1245</span>
+                                    <span class="f-12 text-body">listening now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-wrapper">
+                        <div class="box-style rounded-4 h-100">
+                            <div class="px-3 pt-2 d-flex gap-4 justify-content-start align-items-center">
+                                <h6 class="text-white m-0">Program Schedule</h6>
+                                <span class="text-white-50">|</span>
+                                <div>
+                                    <ul class="nav nav-pills rounded-pills sm mb-2 pt-2" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true">Today</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">Tomorrow</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-contact" type="button" role="tab"
+                                                aria-controls="pills-contact" aria-selected="false">Next Week</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <div class="bg-body rounded-3 border-black border-1">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                            aria-labelledby="pills-home-tab" tabindex="0">
+                                            <div class="p-4 h-100">
+                                                Timeline comes here
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                                            aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end timeline-wrapper -->
+
+                    <div class="player-wrapper bg-dark-subtle p-2 rounded-4">
+                        <div class="player-bg text-truncate" style="background-image: url(img/3.jpg);">
+                            <button type="button" class="btn btn-icon-md">
+                                <svg class="ic-24 text-white">
+                                    <use xlink:href="img/icon_sprite.svg#ic-speaker" />
+                                </svg>
+                            </button>
+                            <div class="player-content">
+                                <div class="progress playing-progress" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <div class="progress-bar w-75"></div>
+                                </div>
+                                <h6>Morning Show</h6>
+                                <div class="d-flex gap-2 justify-content-center">
+                                    <span>John Doe</span> <span>|</span> <span>6:00 to 9:00</span>
+                                </div>
+                                <p class="slide-left">Upbeat music to energize your morning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end timeline-wrapper -->
+                </div>
+                <!-- end  timeline-container-->
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="box-style rounded-4 h-100">
+                            <div class="box-style rounded-4 h-100">
+                                <div class="px-3 pt-2 d-flex gap-4 justify-content-start align-items-center">
+                                    <h6 class="text-white m-0">Playlist</h6>
+                                    <span class="text-white-50">|</span>
+                                    <button type="button" class="btn btn-icon-md">
+                                        <svg class="ic-24 text-white">
+                                            <use xlink:href="img/icon_sprite.svg#ic-speaker" />
+                                        </svg>
+                                    </button>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                      </div>
+                                      <button type="button" class="btn btn-icon-md">
+                                        <svg class="ic-24 text-white">
+                                            <use xlink:href="img/icon_sprite.svg#ic-speaker" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="rounded-chips">
+                                    <li>
+                                        <a href="">Songs</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Ads</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Bgm</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Comics</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="box-style rounded-4 h-100">
+                            fdsfsdf
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="box-style rounded-4 h-100">
+                            fdsfsdf
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="box-style rounded-4 h-100">
+                            fdsfsdf
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

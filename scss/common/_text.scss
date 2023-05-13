@@ -1,0 +1,59 @@
+// font size
+@for $i from 1 through 20 {
+    .f-#{$i} {
+        font-size: #{$i}px !important;
+    }
+}
+
+// line height
+
+@for $i from 1 through 40 {
+    .l-#{$i} {
+        line-height: #{$i}px !important;
+    }
+
+    .rm-mb {
+        .mob-l-#{$i} {
+            line-height: #{$i}px !important;
+        }
+    }
+
+    .rm-tab {
+        .tab-l-#{$i} {
+            line-height: #{$i}px !important;
+        }
+    }
+}
+
+//  two line
+
+.text-two-line {
+    line-height: 1rem;
+    font-weight: 500;
+    max-height: 4rem;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.slide-left {
+    animation: slide-left 20s linear infinite;
+}
+
+
+
+@keyframes slide-left {
+    from {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+  }
+  

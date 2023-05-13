@@ -1,0 +1,82 @@
+// grid
+
+.g-col {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.auto-fr {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.fr-auto {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.auto-auto {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.fr-fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row-auto-auto-fr {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+.row-auto-fr {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.auto-auto-auto {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.g-v-middle {
+    align-items: center;
+}
+
+.g-h-middle {
+    justify-content: center;
+}
+
+.place-items-center {
+    place-items: center;
+}
+
+.row-auto-fr {
+    grid-template-rows: auto 1fr;
+}
+
+.g-middle {
+    @extend .g-v-middle;
+    @extend .g-h-middle;
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+.justify-items-start {
+    justify-items: start;
+}
+
+.justify-self-end {
+    justify-self: end;
+}
+
+.justify-self-start {
+    justify-self: start;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}

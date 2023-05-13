@@ -1,0 +1,28 @@
+// nav-pills
+
+.rounded-pills {
+    &.sm {
+        .nav-link {
+            border-radius: 100px;
+            padding: 4px 16px;
+            font-size: 14px;
+        }
+    }
+}
+
+// rounded button
+
+$btn-icons: ("sm": 32px, "md": 40px, "lg": 48px);
+
+@each $name, $size in $btn-icons {
+    .btn-icon-#{$name} {
+        width:$size;
+        height:$size;
+        border-radius: 100px;
+        padding: 0;
+        display: grid;
+        place-content: center;
+    }
+}
+
+
