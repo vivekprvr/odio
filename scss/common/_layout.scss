@@ -11,7 +11,8 @@
 
 .main-logo {
     img {
-        height: 40px;
+        height: 22px;
+        margin-bottom: 4px;
     }
 }
 
@@ -21,7 +22,7 @@
 
 .main-section {
     width: 100%;
-    height: calc( 100vh - 68px);
+    min-height: calc( 100vh - 68px);
     display: grid;
     align-items: start;
     grid-template-columns: 72px 1fr;
@@ -53,5 +54,11 @@
 .main-content {
     height: 100%;
     border-radius: 16px;
+    padding: 24px;
+    background: var(--bs-body-bg);
 }
 
+.form-check-input:checked {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+}

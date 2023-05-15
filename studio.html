@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="scss/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="main-header bg-dark-subtle">
+            <svg class="ic-24 text-light">
+                <use xlink:href="img/icon_sprite.svg#ic-menu" />
+            </svg>
+            <a href="/" class="main-logo">
+                <img src="/img/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex gap-4 align-items-center">
+                <a href="" class="cursor-pointer">
+                    <svg class="ic-24 text-light">
+                        <use xlink:href="img/icon_sprite.svg#ic-bell" />
+                    </svg>
+                </a>
+                <div class="dropdown">
+                    <div class="avatar-5 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/avatar.jpeg" alt="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-section bg-dark-subtle">
+            <aside class="main-left-menu h-100 bg-dark-subtle">
+                <ul class="main-menu pt-5">
+                    <li class="active">
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-home" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-schedule" />
+                            </svg>
+                            Schedule
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-program" />
+                            </svg>
+                            Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-media" />
+                            </svg>
+                            Media
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-users" />
+                            </svg>
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-settings" />
+                            </svg>
+                            Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-online" />
+                            </svg>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="main-content page-studio">
+
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <h3 class="fw-light text-light-emphasis m-0">My Studio</h3>
+                    </div>
+                    <div class="col-6 d-grid justify-content-end">
+                        <div class="bg-dark-subtle p-1 rounded-5">
+                            <div class="bg-body rounded-5 border-black border-1 g-col align-items-center">
+                                <div class="g-col gap-1 align-items-center ps-2">
+                                    <svg class="ic-20 text-success">
+                                        <use xlink:href="img/icon_sprite.svg#ic-online" />
+                                    </svg>
+                                    <span class="f-14 fw-bold text-success">On Air</span>
+                                    <div class="form-check form-switch m-0">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                </div>
+                                <span class="text-body-tertiary">|</span>
+                                <div class="h-100 p-1 ps-2 pe-3 g-col gap-2">
+                                    <svg class="ic-20 text-primary-emphasis">
+                                        <use xlink:href="img/icon_sprite.svg#ic-headphone" />
+                                    </svg>
+                                    <span class="f-14 fw-bold text-light-emphasis">12K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header -->
+
+                <div class="studio-main overflow-auto">
+                    <div class="overflow-auto">
+                        <div class="box-style rounded-4 h-100">
+                            <div class="box-style rounded-4 h-100 row-auto-auto-fr">
+                                <div class="px-3 pt-3 auto-fr justify-content-start align-items-center pb-4">
+                                    <h6 class="text-white m-0">Playlist</h6>
+                                    <div class="g-col align-items-center justify-content-end gap-2">
+                                        <div class="search-style">
+                                            <div class="icon-container">
+                                                <svg class="ic-20 text-white">
+                                                    <use xlink:href="img/icon_sprite.svg#ic-search" />
+                                                </svg>
+                                            </div>
+                                            <input type="search" class="form-control form-control-sm" placeholder="Search Songs">
+                                        </div>
+                                        <svg class="ic-24 text-white">
+                                            <use xlink:href="img/icon_sprite.svg#ic-filter" />
+                                        </svg>
+                                        <svg class="ic-24 text-white">
+                                            <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- end header -->
+                                <ul class="rounded-chips px-2 pb-2">
+                                    <li class="active">
+                                        <a href="">Songs</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Ads</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Bgm</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Comics</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Comics</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Comics</a>
+                                    </li>
+                                </ul>
+                                <!-- end chips -->
+                                <div class="p-2 h-100-auto">
+                                    <div class="bg-body rounded-4 h-100-auto">
+                                        <table class="table m-0 h-100-auto">
+                                            <thead class="f-11">
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">TITLES</th>
+                                                <th scope="col">ARTIST</th>
+                                                <th scope="col">LAST PLAYED</th>
+                                                <th scope="col">DURATION</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody class="f-14">
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end playlist -->
+
+                    <div class="row-fr-fr gap-2 overflow-auto">
+                        <div class="box-style rounded-4 h-100 row-auto-fr">
+                            <div class="px-3 pt-3 auto-fr justify-content-start align-items-center pb-1">
+                                <h6 class="ext-body-emphasis m-0">Volume Control</h6>
+                            </div>
+                            <div class="p-2">
+                                <div class="volume-control">
+                                    <div class="bg-body row-auto-fr-auto overflow-hidden">
+                                        <span class="bg-secondary-subtle p-1 f-12 text-center">Mic</span>
+                                        <div>
+
+                                        </div>
+                                        <div class="bg-secondary-subtle d-grid justify-items-center">
+                                            <div class="form-check form-switch m-0">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body row-auto-fr row-auto-fr-auto overflow-hidden">
+                                        <span class="bg-secondary-subtle p-1 f-12 text-center">Live</span>
+                                        <div>
+
+                                        </div>
+                                        <div class="bg-secondary-subtle d-grid justify-items-center">
+                                            <div class="form-check form-switch m-0">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body row-auto-fr row-auto-fr-auto overflow-hidden">
+                                        <span class="bg-secondary-subtle p-1 f-12 text-center">Songs</span>
+                                        <div>
+
+                                        </div>
+                                        <div class="bg-secondary-subtle d-grid justify-items-center">
+                                            <div class="form-check form-switch m-0">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-body row-auto-fr row-auto-fr-auto overflow-hidden">
+                                        <span class="bg-secondary-subtle p-1 f-12 text-center">Bgm</span>
+                                        <div>
+
+                                        </div>
+                                        <div class="bg-secondary-subtle d-grid justify-items-center">
+                                            <div class="form-check form-switch m-0">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end  Volume Control-->
+
+                        <div class="box-style rounded-4 h-100-auto row-auto-fr">
+                            <div class="px-3 pt-3 auto-fr justify-items-end align-items-center pb-1">
+                                <h6 class="ext-body-emphasis m-0">Quick Play</h6>
+                                <svg class="ic-24 text-primary-emphasis">
+                                    <use xlink:href="img/icon_sprite.svg#ic-add" />
+                                </svg>
+                            </div>
+                            <div class="p-2 h-100-auto">
+                                <div class="quick-play">
+                                    <div class="bg-body">
+                                        <svg class="ic-26 text-body">
+                                            <use xlink:href="img/icon_sprite.svg#ic-emoji" />
+                                        </svg>
+                                        <span class="f-11 text-body text-truncate">Happy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end quick play -->
+                    </div>
+
+                    <div class="box-style rounded-4 h-100-auto row-auto-fr">
+                        <div class="px-3 pt-3 auto-fr justify-items-end align-items-center pb-1">
+                            <h6 class="ext-body-emphasis m-0">Live Show</h6>
+                            <a href="">
+                                <svg class="ic-24 text-primary-emphasis">
+                                    <use xlink:href="img/icon_sprite.svg#ic-user-add" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="rounded-4 overflow-auto h-100-auto p-2">
+                            <div class="users-avatar-list">
+                                <div class="user-avatar-item text-truncate speaking">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-message" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+
+                                <div class="user-avatar-item text-truncate">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-message" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+
+                                <div class="user-avatar-item text-truncate">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-message" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+
+                                <div class="user-avatar-item text-truncate">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-message" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+
+                                <div class="user-avatar-item text-truncate">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-message" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+                            </div>
+                            <div class="py-3 f-14 fw-bold">Waiting Speakers</div>
+                            <div class="users-avatar-list">
+                                <div class="user-avatar-item text-truncate speaking">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-add" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+
+                                <div class="user-avatar-item text-truncate">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-add" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+
+                                <div class="user-avatar-item text-truncate">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-add" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+
+                                <div class="user-avatar-item text-truncate">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-add" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+
+                                <div class="user-avatar-item text-truncate">
+                                    <div class="avatar-9 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <div class="live-actions-wrapper">
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-box" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-mic" />
+                                            </svg>
+                                        </a>
+                                        <a>
+                                            <svg>
+                                                <use xlink:href="img/icon_sprite.svg#ic-message" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="f-13 text-truncate text-start">Lynda James Lynda James</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end liveshow -->
+
+                    <div class="box-style rounded-4 h-100 row-auto-auto-fr h-100-auto">
+                        <div class="px-3 pt-3 auto-fr justify-content-start align-items-center pb-3">
+                            <h6 class="text-white m-0">Chat</h6>
+                        </div>
+                        <div class="px-2">
+                            <ul class="rounded-chips pb-2">
+                                <li class="active">
+                                    <a href="">Public</a>
+                                </li>
+                                <li>
+                                    <a href="">Requests</a>
+                                </li>
+                                <li>
+                                    <a href="">Individual</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row-fr-auto h-100-auto">
+                            <div class="h-100-auto">
+                                <div class="messages">
+                                    <div class="time">
+                                      Today at 11:41
+                                    </div>
+                                    <div class="message sender">
+                                      Hey, man! What's up, Mr Stark? 👋
+                                    </div>
+                                    <div class="auto-fr gap-2">
+                                        <div class="avatar-3 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/avatar.jpeg" alt="avatar">
+                                        </div>
+                                        <div class="message">
+                                          Kid, where'd you come from?
+                                        </div>
+                                    </div>
+                                    <div class="message sender">
+                                      Field trip! 🤣
+                                    </div>
+                                    <div class="message sender">
+                                      Uh, what is this guy's problem, Mr. Stark? 🤔
+                                    </div>
+                                    <div class="message stark">
+                                      <div class="typing typing-1"></div>
+                                      <div class="typing typing-2"></div>
+                                      <div class="typing typing-3"></div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="chat-bottom">
+                                <button type="button" class="btn btn-icon-md">
+                                    <svg class="ic-24 text-body-secondary">
+                                        <use xlink:href="img/icon_sprite.svg#ic-emoji" />
+                                    </svg>
+                                </button>
+                                <input type="text" class="form-control" placeholder="Type here">
+                                <button type="button" class="btn btn-icon-md bg-dark-subtle">
+                                    <svg class="ic-24">
+                                        <use xlink:href="img/icon_sprite.svg#ic-send" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- chat -->
+                </div>
+
+                <div class="h-100">
+                    <div class="timeline-wrapper h-100">
+                        <div class="box-style rounded-4 h-100 row-auto-fr">
+                            <div class="px-3 pt-2 d-flex gap-4 justify-content-start align-items-center">
+                                <h6 class="text-light-emphasis m-0">Live timeline</h6>
+                                <!-- <span class="text-white-50">|</span>
+                                Pause the program
+                                <span class="text-white-50">|</span>
+                                <div>
+                                    <div class="text-danger-emphasis">your mic is mute</div>
+                                </div> -->
+                            </div>
+                            <div class="p-2">
+                                <div class="bg-body rounded-3 border-black border-1 h-100 p-2">
+                                    Timeline Comes Here
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end timeline-wrapper -->
+                </div>
+                <!-- end  timeline-container-->
+
+            </section>
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -8,6 +8,8 @@
     display: grid;
     grid-template-rows: auto 260px 1fr;
     gap: 16px;
+    min-height: 800px;
+    overflow: auto;
 }
 
 // player
@@ -42,3 +44,4 @@
     width: 100%;
     height: 6px;
 }
+

@@ -1,0 +1,118 @@
+.page-studio {
+    display: grid;
+    grid-template-rows: auto 1fr 220px;
+    gap: 16px;
+    min-height: 800px;
+    overflow: auto;
+    height: calc(100vh - 80px);
+}
+
+.studio-main {
+    display: grid;
+    grid-template-columns: 2fr minmax(260px, 1fr) 1fr minmax(260px, 1fr);
+    gap: 8px;
+}
+
+.volume-control {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+    height: 100%;
+    div {
+        border-radius: 8px;
+    }
+}
+
+.quick-play {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-auto-rows: 60px;
+    gap: 4px;
+
+    div {
+        border-radius: 8px;
+        display: grid;
+        justify-items: center;
+        cursor: pointer;
+        padding: 4px;
+        align-items: center;
+    }
+}
+
+// live show
+
+.users-avatar-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+    gap: 8px 12px;
+    align-items: start;
+    align-content: start;
+}
+
+.user-avatar-item {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    gap: 4px;
+    background: var(--bs-body-bg);
+    padding: 8px;
+    border-radius: 10px;
+
+    .avatar-9 {
+        margin: auto;
+    }
+
+    &.speaking {
+        .avatar-9 {
+            border: 3px solid var(--bs-primary);
+        }
+    }
+}
+
+.live-actions-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(#000, 0.9);
+    border-radius: 30px;
+    padding: 4px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 6px;
+    display: none;
+
+    a{
+        display: grid;
+        place-items: center;
+        color: var(--bs-body-color);
+        cursor: pointer;
+
+        &.disabled {
+            color: var(--bs-tertiary-color);
+        }
+
+        &.muted {
+            color: var(--bs-danger);
+        }
+
+        &.active {
+            color: var(--bs-danger);
+        }
+
+        svg {
+            width: 22px;
+            height: 22px;
+        }
+    }
+}
+
+
+.user-avatar-item {
+    &:hover {
+        .live-actions-wrapper {
+            display: grid;
+        }
+    }
+}

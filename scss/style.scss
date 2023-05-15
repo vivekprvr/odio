@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Wix Madefor Display', sans-serif !important;
+}
+
 @import "../scss/common/layout";
 @import "../scss/common/avatar";
 @import "../scss/common/icon";
@@ -6,6 +12,10 @@
 @import "../scss/common/button";
 @import "../scss/common/container";
 @import "../scss/common/chips";
+@import "../scss/common/input";
+@import "../scss/common/helper";
 
 @import "../scss/pages/dashboard";
+@import "../scss/pages/studio";
+@import "../scss/pages/chat";
 

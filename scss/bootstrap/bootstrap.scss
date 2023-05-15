@@ -1,10 +1,6 @@
 @import "mixins/banner";
 @include bsBanner("");
 
-
-$primary: #d90e00;
-$danger: #ff4136;
-
 // scss-docs-start import-stack
 // Configuration
 @import "functions";

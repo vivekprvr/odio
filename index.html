@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="scss/custom-bootstrap.css">
+    <link rel="stylesheet" href="scss/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="scss/style.css">
 </head>
 
 <body>
     <div class="page-wrapper">
-        <header class="main-header bg-black">
+        <header class="main-header bg-dark-subtle">
             <svg class="ic-24 text-light">
                 <use xlink:href="img/icon_sprite.svg#ic-menu" />
             </svg>
@@ -37,8 +37,8 @@
             </div>
         </header>
 
-        <section class="main-section bg-black">
-            <aside class="main-left-menu h-100 bg-black">
+        <section class="main-section bg-dark-subtle">
+            <aside class="main-left-menu h-100 bg-dark-subtle">
                 <ul class="main-menu pt-5">
                     <li class="active">
                         <a href="">
@@ -98,11 +98,11 @@
                     </li>
                 </ul>
             </aside>
-            <section class="p-4 main-content bg-dark page-dashboard">
+            <section class="p-4 main-content bg-body page-dashboard">
 
                 <div class="row align-items-center">
                     <div class="col-6">
-                        <h3 class="fw-light text-white">Welcome to Club FM</h3>
+                        <h3 class="fw-light text-light-emphasis">Welcome to Club FM</h3>
                     </div>
                     <div class="col-6 d-grid justify-content-end">
                         <div class="bg-dark-subtle p-1 rounded-5">
@@ -114,7 +114,7 @@
                                     <span class="f-14 fw-bold text-success">On Air</span>
                                 </div>
                                 <div class="border-start border-black h-100 p-1 ps-2 pe-2">
-                                    <span class="f-15 fw-bold text-white">1245</span>
+                                    <span class="f-15 fw-bold text-light-emphasis">1245</span>
                                     <span class="f-12 text-body">listening now</span>
                                 </div>
                             </div>
@@ -124,46 +124,27 @@
 
                 <div class="timeline-container">
                     <div class="timeline-wrapper">
-                        <div class="box-style rounded-4 h-100">
+                        <div class="box-style rounded-4 h-100 row-auto-fr">
                             <div class="px-3 pt-2 d-flex gap-4 justify-content-start align-items-center">
-                                <h6 class="text-white m-0">Program Schedule</h6>
+                                <h6 class="text-light-emphasis m-0">Program Schedule</h6>
                                 <span class="text-white-50">|</span>
                                 <div>
-                                    <ul class="nav nav-pills rounded-pills sm mb-2 pt-2" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-home" type="button" role="tab"
-                                                aria-controls="pills-home" aria-selected="true">Today</button>
+                                    <ul class="rounded-chips px-2">
+                                        <li class="active">
+                                            <a href="">Today</a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-profile" type="button" role="tab"
-                                                aria-controls="pills-profile" aria-selected="false">Tomorrow</button>
+                                        <li>
+                                            <a href="">Tomorrow</a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-contact" type="button" role="tab"
-                                                aria-controls="pills-contact" aria-selected="false">Next Week</button>
+                                        <li>
+                                            <a href="">Next Week</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="p-2">
-                                <div class="bg-body rounded-3 border-black border-1">
-                                    <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                            aria-labelledby="pills-home-tab" tabindex="0">
-                                            <div class="p-4 h-100">
-                                                Timeline comes here
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                            aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                            aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-                                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
-                                            aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
-                                    </div>
+                                <div class="bg-body rounded-3 border-black border-1 h-100 p-2">
+                                    Timeline Comes Here
                                 </div>
                             </div>
                         </div>
@@ -195,29 +176,33 @@
                 <!-- end  timeline-container-->
 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-5">
                         <div class="box-style rounded-4 h-100">
                             <div class="box-style rounded-4 h-100">
-                                <div class="px-3 pt-2 d-flex gap-4 justify-content-start align-items-center">
+                                <div class="px-3 pt-3 auto-fr justify-content-start align-items-center pb-4">
                                     <h6 class="text-white m-0">Playlist</h6>
-                                    <span class="text-white-50">|</span>
-                                    <button type="button" class="btn btn-icon-md">
+                                    <div class="g-col align-items-center justify-content-end gap-2">
+                                        <div class="search-style">
+                                            <div class="icon-container">
+                                                <svg class="ic-20 text-white">
+                                                    <use xlink:href="img/icon_sprite.svg#ic-search" />
+                                                </svg>
+                                            </div>
+                                            <input type="search" class="form-control form-control-sm" placeholder="Search Songs">
+                                        </div>
+
+
                                         <svg class="ic-24 text-white">
-                                            <use xlink:href="img/icon_sprite.svg#ic-speaker" />
+                                            <use xlink:href="img/icon_sprite.svg#ic-filter" />
                                         </svg>
-                                    </button>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                      </div>
-                                      <button type="button" class="btn btn-icon-md">
                                         <svg class="ic-24 text-white">
-                                            <use xlink:href="img/icon_sprite.svg#ic-speaker" />
+                                            <use xlink:href="img/icon_sprite.svg#ic-more-box" />
                                         </svg>
-                                    </button>
+                                    </div>
                                 </div>
-                                <ul class="rounded-chips">
-                                    <li>
+                                <!-- end header -->
+                                <ul class="rounded-chips px-2 pb-2">
+                                    <li class="active">
                                         <a href="">Songs</a>
                                     </li>
                                     <li>
@@ -229,23 +214,190 @@
                                     <li>
                                         <a href="">Comics</a>
                                     </li>
+                                    <li>
+                                        <a href="">Comics</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Comics</a>
+                                    </li>
                                 </ul>
+                                <!-- end chips -->
+                                <div class="p-2">
+                                    <div class="bg-body rounded-4 overflow-auto">
+                                        <table class="table m-0">
+                                            <thead class="f-11">
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">TITLES</th>
+                                                <th scope="col">ARTIST</th>
+                                                <th scope="col">LAST PLAYED</th>
+                                                <th scope="col">DURATION</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody class="f-14">
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div class="g-col justify-content-start gap-2">
+                                                        <div class="box-img-5">
+                                                            <img src="img/2.jpg">
+                                                        </div>
+                                                        <div class="text-truncate">
+                                                            <div class="fw-medium f-15 text-light text-truncate">Jo bhi main</div>
+                                                            <span class="f-13 text-body text-truncate">Rockstar</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Mohit Chauhan</td>
+                                                <td>2 Days ago</td>
+                                                <td>3:22</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="box-style rounded-4 h-100">
-                            fdsfsdf
-                        </div>
-                    </div>
+                    <!-- end playlist -->
+
                     <div class="col-2">
                         <div class="box-style rounded-4 h-100">
-                            fdsfsdf
+                            <div class="px-3 pt-3 auto-fr justify-content-start align-items-center pb-3">
+                                <h6 class="text-white m-0">Playlist</h6>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="col-2">
+                        <div class="box-style rounded-4 h-100 row-auto-fr">
+                            <div class="px-3 pt-3 auto-fr justify-content-start align-items-center pb-2">
+                                <h6 class="text-white m-0">Online Listeners</h6>
+                            </div>
+                            <div class="p-2">
+                                <div class="bg-body rounded-4 overflow-auto h-100 users-avatar-list p-2">
+
+                                    <div class="d-grid justify-items-center align-items-start gap-1 text-truncate">
+                                        <div class="avatar-8 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/avatar.jpeg" alt="avatar">
+                                        </div>
+                                        <div class="f-13 text-truncate">Lynda James Lynda James</div>
+                                    </div>
+                                    <div class="d-grid justify-items-center align-items-start gap-1 text-truncate">
+                                        <div class="avatar-8 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/avatar.jpeg" alt="avatar">
+                                        </div>
+                                        <div class="f-13 text-truncate">Lynda James Lynda James</div>
+                                    </div>
+                                    <div class="d-grid justify-items-center align-items-start gap-1 text-truncate">
+                                        <div class="avatar-8 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/avatar.jpeg" alt="avatar">
+                                        </div>
+                                        <div class="f-13 text-truncate">Lynda James Lynda James</div>
+                                    </div>
+                                    <div class="d-grid justify-items-center align-items-start gap-1 text-truncate">
+                                        <div class="avatar-8 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/avatar.jpeg" alt="avatar">
+                                        </div>
+                                        <div class="f-13 text-truncate">Lynda James Lynda James</div>
+                                    </div>
+                                    <div class="d-grid justify-items-center align-items-start gap-1 text-truncate">
+                                        <div class="avatar-8 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/avatar.jpeg" alt="avatar">
+                                        </div>
+                                        <div class="f-13 text-truncate">Lynda James Lynda James</div>
+                                    </div>
+                                    <div class="d-grid justify-items-center align-items-start gap-1 text-truncate">
+                                        <div class="avatar-8 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/avatar.jpeg" alt="avatar">
+                                        </div>
+                                        <div class="f-13 text-truncate">Lynda James Lynda James</div>
+                                    </div>
+                                    <div class="d-grid justify-items-center align-items-start gap-1 text-truncate">
+                                        <div class="avatar-8 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/avatar.jpeg" alt="avatar">
+                                        </div>
+                                        <div class="f-13 text-truncate">Lynda James Lynda James</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-3">
                         <div class="box-style rounded-4 h-100">
-                            fdsfsdf
+                            <div class="px-3 pt-2 auto-fr justify-content-start align-items-center pb-3">
+                                <h6 class="text-white m-0">Chat</h6>
+                            </div>
                         </div>
                     </div>
                 </div>

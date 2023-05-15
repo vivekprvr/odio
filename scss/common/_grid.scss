@@ -35,6 +35,21 @@
     grid-template-rows: auto 1fr;
 }
 
+.row-fr-auto {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.row-fr-fr {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.row-auto-fr-auto {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .auto-auto-auto {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -67,6 +82,10 @@
 
 .justify-items-start {
     justify-items: start;
+}
+
+.justify-items-end {
+    justify-items: end;
 }
 
 .justify-self-end {
