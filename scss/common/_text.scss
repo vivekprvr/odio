@@ -25,6 +25,18 @@
     }
 }
 
+// letter spacing
+
+@for $i from 1 through 5 {
+    .lp-#{$i} {
+        letter-spacing: calc(#{$i}px / 2)!important;
+    }
+
+    .lp-n#{$i} {
+        letter-spacing: -calc(#{$i}px / 2) !important;
+    }
+}
+
 //  two line
 
 .text-two-line {
@@ -56,4 +68,13 @@
               transform: translateX(-100%);
     }
   }
-  
+
+  p {
+    margin-bottom: 0 !important ;
+  }
+
+//   heading
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    font-weight: 600;
+}

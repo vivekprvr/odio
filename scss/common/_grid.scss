@@ -25,6 +25,17 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.auto-auto-auto {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.auto-fr-auto {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+
 .row-auto-auto-fr {
     display: grid;
     grid-template-rows: auto auto 1fr;
@@ -50,16 +61,13 @@
     grid-template-rows: auto 1fr auto;
 }
 
-.auto-auto-auto {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
 .g-v-middle {
+    display: grid;
     align-items: center;
 }
 
 .g-h-middle {
+    display: grid;
     justify-content: center;
 }
 
@@ -94,6 +102,10 @@
 
 .justify-self-start {
     justify-self: start;
+}
+
+.justify-self-center {
+    justify-self: center;
 }
 
 .justify-space-between {

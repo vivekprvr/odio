@@ -1,6 +1,5 @@
-.search-style {
+.search-box {
     position: relative;
-    max-width: 200px;
 
     input {
         border-radius: 100px;
@@ -17,4 +16,15 @@
         place-content: center;
     }
 
+}
+
+
+.search-style {
+    max-width: 200px;
+    @extend .search-box;
+}
+
+.search-style-1 {
+    max-width: 300px;
+    @extend .search-box;
 }
