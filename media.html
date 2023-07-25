@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="scss/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="main-header bg-dark-subtle">
+            <svg class="ic-24 text-light">
+                <use xlink:href="img/icon_sprite.svg#ic-menu" />
+            </svg>
+            <a href="/" class="main-logo">
+                <img src="/img/logo.svg" alt="logo">
+            </a>
+            <div class="g-h-middle">
+                <div class="search-box w-420">
+                    <div class="icon-container">
+                        <svg class="ic-20 text-white">
+                            <use xlink:href="img/icon_sprite.svg#ic-search"></use>
+                        </svg>
+                    </div>
+                    <input type="search" class="form-control form-control-md" placeholder="Search across our channel">
+                </div>
+            </div>
+            <div class="d-flex gap-4 align-items-center">
+                <a href="" class="cursor-pointer">
+                    <svg class="ic-24 text-light">
+                        <use xlink:href="img/icon_sprite.svg#ic-bell" />
+                    </svg>
+                </a>
+                <div class="dropdown">
+                    <div class="avatar-5 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/avatar.jpeg" alt="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-section bg-dark-subtle">
+            <aside class="main-left-menu h-100 bg-dark-subtle">
+                <ul class="main-menu pt-5">
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-home" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-schedule" />
+                            </svg>
+                            Schedule
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-program" />
+                            </svg>
+                            Programs
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-media" />
+                            </svg>
+                            Media
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-users" />
+                            </svg>
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-settings" />
+                            </svg>
+                            Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-online" />
+                            </svg>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="main-content p-0 row-auto-fr overflow-auto is-playing-show">
+
+                <div class="fr-auto px-4 pt-3 pb-3 align-items-center">
+                    <div>
+                        <h4 class="text-light-emphasis m-0">Media</h4>
+                        <p>Explore thousands of free and paid templates</p>
+                    </div>
+                    <div class="g-col gap-2">
+                        <button type="button" class="btn btn-icon-md ripples">
+                            <svg class="ic-22 text-white">
+                                <use xlink:href="img/icon_sprite.svg#ic-grid" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-primary px-4 ripples">
+                            New
+                        </button>
+                    </div>
+                </div>
+                <!-- end header -->
+                <div class="p-4 pt-0 overflow-auto h-100">
+                    <div>
+                        <h6 class="text-body-emphasis pb-2">Recent</h6>
+                        <div class="grid-system-140">
+                            <div class="audio-list">
+                                <div class="position-relative">
+                                    <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                                        <img src="https://i.scdn.co/image/ab67656300005f1f5bec639b003328f92022231c" alt="">
+                                    </div>
+                                    <div class="time">4:03</div>
+                                    <div class="audio-play-options">
+                                        <button type="button" class="btn btn-primary btn-icon-md ripples">
+                                            <svg class="ic-20 text-white">
+                                                <use xlink:href="img/icon_sprite.svg#ic-play" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="audio-list-bottom">
+                                    <div class="text-truncate pt-2 d-grid">
+                                        <div class="f-15 text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</div>
+                                        <span class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan</span>
+                                    </div>
+                                    <div class="audio-file-more">
+                                        <button type="button" class="btn btn-icon-sm ripples">
+                                            <svg class="ic-20 text-white">
+                                                <use xlink:href="img/icon_sprite.svg#ic-more-circle" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="audio-list">
+                                <div class="position-relative">
+                                    <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                                        <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728" alt="">
+                                    </div>
+                                    <div class="time">4:03</div>
+                                    <div class="overlay-container">
+                                        <lottie-player src="img/music.json" background="transparent"  speed="1"  style="width: 60px; height: 60px;" loop autoplay></lottie-player>
+                                    </div>
+                                </div>
+                                <div class="text-truncate pt-2 d-grid">
+                                    <div class="f-15 text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</div>
+                                    <span class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan</span>
+                                </div>
+                            </div>
+                            <div class="audio-list">
+                                <div class="position-relative">
+                                    <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                                        <img src="https://i.scdn.co/image/ab67706f000000029666f95a93f23e02a53b7719" alt="">
+                                    </div>
+                                    <div class="time">4:03</div>
+                                </div>
+                                <div class="text-truncate pt-2 d-grid">
+                                    <div class="f-15 text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</div>
+                                    <span class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan</span>
+                                </div>
+                            </div>
+                            <div class="audio-list">
+                                <div class="position-relative">
+                                    <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                                        <img src="https://i.scdn.co/image/ab67706f000000021ed66e7fdbed106f3631eff1" alt="">
+                                    </div>
+                                    <div class="time">4:03</div>
+                                </div>
+                                <div class="text-truncate pt-2 d-grid">
+                                    <div class="f-15 text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</div>
+                                    <span class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan</span>
+                                </div>
+                            </div>
+                            <div class="audio-list">
+                                <div class="position-relative">
+                                    <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                                        <img src="https://i.scdn.co/image/ab67706f00000002356ee7c67366dbdfaad40101" alt="">
+                                    </div>
+                                    <div class="time">4:03</div>
+                                </div>
+                                <div class="text-truncate pt-2 d-grid">
+                                    <div class="f-15 text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</div>
+                                    <span class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end recent -->
+
+                    <div class="pt-4">
+                        <h6 class="text-body-emphasis pb-2">Folder</h6>
+                        <div class="grid-system-md">
+                            <div class="ratio bg-body-secondary ratio-1x1 rounded-2 audio-cover-photo cursor-pointer">
+                                <div>
+                                    <div class="folder-inside-grid">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000021ed66e7fdbed106f3631eff1" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f00000002356ee7c67366dbdfaad40101" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000029666f95a93f23e02a53b7719" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000021ed66e7fdbed106f3631eff1" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="folder-bottom">
+                                        <h6 class="text-truncate m-0 text-white">Songs</h6>
+                                        <span class="f-13 text-white-50 text-truncate">36 Items </span>
+                                    </div>
+                                </div>
+                                <div class="p"></div>
+                            </div>
+                            <div class="ratio bg-body-secondary ratio-1x1 rounded-2 audio-cover-photo cursor-pointer">
+                                <div>
+                                    <div class="folder-inside-grid">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000021ed66e7fdbed106f3631eff1" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f00000002356ee7c67366dbdfaad40101" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000029666f95a93f23e02a53b7719" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000021ed66e7fdbed106f3631eff1" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="folder-bottom">
+                                        <h6 class="text-truncate m-0 text-white">Music</h6>
+                                        <span class="f-13 text-white-50 text-truncate">36 Items </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratio bg-body-secondary ratio-1x1 rounded-2 audio-cover-photo cursor-pointer">
+                                <div>
+                                    <div class="folder-inside-grid">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000021ed66e7fdbed106f3631eff1" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f00000002356ee7c67366dbdfaad40101" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000029666f95a93f23e02a53b7719" alt="">
+                                        </div>
+                                        <div class="ratio ratio-1x1">
+                                            <img src="https://i.scdn.co/image/ab67706f000000021ed66e7fdbed106f3631eff1" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="folder-bottom">
+                                        <h6 class="text-truncate m-0 text-white">Ads</h6>
+                                        <span class="f-13 text-white-50 text-truncate">36 Items </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end folders-->
+
+                    <div class="pt-4">
+                        <h6 class="text-body-emphasis pb-2">Files</h6>
+                        <div class="grid-system-140">
+                            <div class="audio-list">
+                                <div class="position-relative">
+                                    <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                                        <img src="https://i.scdn.co/image/ab67656300005f1f5bec639b003328f92022231c" alt="">
+                                    </div>
+                                    <div class="time">4:03</div>
+                                </div>
+                                <div class="text-truncate pt-2">
+                                    <div class="f-15 text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</div>
+                                    <span class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan</span>
+                                </div>
+                            </div>
+                            <div class="audio-list">
+                                <div class="position-relative">
+                                    <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                                        <img src="https://i.scdn.co/image/ab67616d00001e0283cd2b85adb2dfce3a41c1cf" alt="">
+                                    </div>
+                                    <div class="time">4:03</div>
+                                </div>
+                                <div class="text-truncate pt-2">
+                                    <h6 class="text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</h6>
+                                    <p class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan</p>
+                                </div>
+                            </div>
+                            <div class="audio-list">
+                                <div class="position-relative">
+                                    <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                                        <img src="https://i.scdn.co/image/bf4d560ed87a2c733c6298f4d978109566237be4" alt="">
+                                    </div>
+                                    <div class="time">4:03</div>
+                                </div>
+                                <div class="text-truncate pt-2">
+                                    <h6 class="text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</h6>
+                                    <p class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end folders-->
+                </div>
+
+                <div class="player-bottom">
+                    <div class="player-left">
+                        <div class="ratio ratio-1x1 rounded-2 audio-cover-photo">
+                            <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728" alt="">
+                        </div>
+                        <div class="text-truncate d-grid">
+                            <div class="f-14 text-truncate m-0 text-light-emphasis">Aga Naga (From “Ponniyin Selvan Part-2”)</div>
+                            <span class="f-12 text-truncate">A.R. Rahman Shakthisree Gopalan</span>
+                        </div>
+                    </div>
+                    <div class="g-col justify-content-start align-items-center gap-1">
+                        <button type="button" class="btn btn-icon-md ripples">
+                            <svg class="ic-20 text-body-secondary">
+                                <use xlink:href="img/icon_sprite.svg#ic-play-prev" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-icon-md ripples">
+                            <svg class="ic-22 text-white">
+                                <use xlink:href="img/icon_sprite.svg#ic-play" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-icon-md ripples">
+                            <svg class="ic-20 text-body-secondary">
+                                <use xlink:href="img/icon_sprite.svg#ic-play-next" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="auto-fr-auto gap-2 playback-bar">
+                        <span>00:56</span>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                        </div>
+                        <span>00:56</span>
+                    </div>
+                    <button type="button" class="btn btn-icon-md ripples">
+                        <svg class="ic-20 text-body-secondary">
+                            <use xlink:href="img/icon_sprite.svg#ic-volume" />
+                        </svg>
+                    </button>
+                </div>
+
+
+            </section>
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+        <script src="js/ripple.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+
+</html>

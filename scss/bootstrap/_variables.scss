@@ -6,17 +6,17 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$white: #fff !default;
+$gray-100: #F3EFFA !default;
+$gray-200: #C8C5D0 !default;
+$gray-300: #ACAAB4 !default;
+$gray-400: #787680 !default;
+$gray-500: #5F5D67 !default;
+$gray-600: #47464F !default;
+$gray-700: #302F38 !default;
+$gray-800: #1B1B23 !default;
+$gray-900: #14141B !default;
+$black: #000 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -37,7 +37,7 @@ $grays: (
 
 // scss-docs-start color-variables
 $blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
+$indigo:  #4D40EB !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
@@ -544,9 +544,9 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
+$border-radius:               .6rem !default;
+$border-radius-sm:            .4rem !default;
+$border-radius-lg:            .8rem !default;
 $border-radius-xl:            1rem !default;
 $border-radius-xxl:           2rem !default;
 $border-radius-pill:          50rem !default;

@@ -111,3 +111,17 @@
 .justify-space-between {
     justify-content: space-between;
 }
+
+// grid system
+
+.grid-system-md {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 8px;
+}
+
+.grid-system-140 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+}

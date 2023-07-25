@@ -23,6 +23,7 @@
 .main-section {
     width: 100%;
     min-height: calc( 100vh - 68px);
+    height: calc( 100vh - 68px);
     display: grid;
     align-items: start;
     grid-template-columns: 72px 1fr;
@@ -46,7 +47,7 @@
     }
     li.active {
         a {
-            color: var(--bs-primary);
+            color: var(--bs-primary-text-emphasis);
         }
     }
 }
