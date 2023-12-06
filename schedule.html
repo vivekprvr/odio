@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="scss/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="main-header bg-dark-subtle">
+            <svg class="ic-24 text-light">
+                <use xlink:href="img/icon_sprite.svg#ic-menu" />
+            </svg>
+            <a href="/" class="main-logo">
+                <img src="/img/logo.svg" alt="logo">
+            </a>
+            <div class="g-h-middle">
+                <div class="search-box w-420">
+                    <div class="icon-container">
+                        <svg class="ic-20 text-white">
+                            <use xlink:href="img/icon_sprite.svg#ic-search"></use>
+                        </svg>
+                    </div>
+                    <input type="search" class="form-control form-control-md" placeholder="Search across our channel">
+                </div>
+            </div>
+            <div class="d-flex gap-4 align-items-center">
+                <a href="" class="cursor-pointer">
+                    <svg class="ic-24 text-light">
+                        <use xlink:href="img/icon_sprite.svg#ic-bell" />
+                    </svg>
+                </a>
+                <div class="dropdown">
+                    <div class="avatar-5 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/avatar.jpeg" alt="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-section bg-dark-subtle">
+            <aside class="main-left-menu h-100 bg-dark-subtle">
+                <ul class="main-menu pt-5">
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-home" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-schedule" />
+                            </svg>
+                            Schedule
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-program" />
+                            </svg>
+                            Programs
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-media" />
+                            </svg>
+                            Media
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-users" />
+                            </svg>
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-settings" />
+                            </svg>
+                            Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-online" />
+                            </svg>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="main-content p-0 row-auto-fr overflow-auto is-playing-show">
+
+                <div class="fr-auto px-4 pt-3 pb-3 align-items-center">
+                    <div>
+                        <h4 class="text-light-emphasis m-0">Schedule</h4>
+                        <p>Explore thousands of free and paid templates</p>
+                    </div>
+                    <div class="g-col gap-2">
+                        <button type="button" class="btn btn-icon-md ripples">
+                            <svg class="ic-22 text-white">
+                                <use xlink:href="img/icon_sprite.svg#ic-grid" />
+                            </svg>
+                        </button>
+                        <div>
+                            <button type="button" class="btn btn-primary px-4 ripples" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Schedule
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header -->
+                <div class="py-0 schedule-layout overflow-auto h-100 border-1 border-top border-black">
+                    <div class="border-1 border-end border-black h-100 overflow-auto">
+                        <span class="text-light f-15 py-3 d-block ps-4">Today</span>
+                        <div class="schedule-list border-1 border-bottom border-black px-4 py-2">
+                            <span class="f-13 text-primary-emphasis">11:00AM - 12:00AM</span>
+                            <h6 class="text-light pt-1 mb-0 text-truncate">Southern Musics</h6>
+                            <p class="">RJ Aneesh Kumar | 1 hour</p>
+                        </div>
+                        <div class="schedule-list border-1 border-bottom border-black px-4 py-2 active">
+                            <span class="f-13 text-primary-emphasis">11:00AM - 12:00AM</span>
+                            <h6 class="text-light pt-1 mb-0 text-truncate">Southern Musics</h6>
+                            <p class="">RJ Aneesh Kumar | 1 hour</p>
+                        </div>
+                        <div class="schedule-list border-1 border-bottom border-black px-4 py-2">
+                            <span class="f-13 text-primary-emphasis">11:00AM - 12:00AM</span>
+                            <h6 class="text-light pt-1 mb-0 text-truncate">Southern Musics</h6>
+                            <p class="">RJ Aneesh Kumar | 1 hour</p>
+                        </div>
+                        <span class="text-light f-15 py-3 d-block ps-4">Tomorrow</span>
+                        <div class="schedule-list border-1 border-bottom border-black px-4 py-2">
+                            <span class="f-13 text-primary-emphasis">11:00AM - 12:00AM</span>
+                            <h6 class="text-light pt-1 mb-0 text-truncate">Southern Musics</h6>
+                            <p class="">RJ Aneesh Kumar | 1 hour</p>
+                        </div>
+                    </div>
+                    <div class="auto-fr h-100 overflow-auto">
+                        <div class="schedule-detail-header">
+                            <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728" alt="">
+                        </div>
+                        <div class="p-3 d-grid row-auto-auto-fr h-100 overflow-auto">
+                            <div>
+                                <span class="f-13 text-primary-emphasis">11:00AM - 12:00AM</span>
+                                <h5 class="text-light pt-1">Southern Musics</h5>
+                                <p class="">RJ Aneesh Kumar | 1 hour</p>
+                            </div>
+                            <h5 class="text-light pt-4 pb-3">Songs</h5>
+                            <div>
+                                <table class="table">
+                                    <thead>
+                                    <tbody>
+                                        <tr class="table-song-list">
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <div class="auto-fr gap-2">
+                                                    <div
+                                                        class="w-48px ratio position-relative ratio-1x1 rounded-2 overflow-hidden">
+                                                        <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728"
+                                                            alt="">
+                                                        <div class="position-absolute table-song-list-play-option">
+                                                            <svg class="ic-20 text-white">
+                                                                <use xlink:href="img/icon_sprite.svg#ic-play" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-grid">
+                                                        <p class="f-15 text-light-emphasis text-truncate">A.R. Rahman
+                                                            Shakthisree Gopalan
+                                                        </p>
+                                                        <p class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="f-12 text-end">0:10 Min</td>
+                                        </tr>
+                                        <tr class="table-song-list">
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <div class="auto-fr gap-2">
+                                                    <div
+                                                        class="w-48px ratio position-relative ratio-1x1 rounded-2 overflow-hidden">
+                                                        <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728"
+                                                            alt="">
+                                                        <div class="position-absolute table-song-list-play-option">
+                                                            <svg class="ic-20 text-white">
+                                                                <use xlink:href="img/icon_sprite.svg#ic-play" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-grid">
+                                                        <p class="f-15 text-light-emphasis text-truncate">A.R. Rahman
+                                                            Shakthisree Gopalan
+                                                        </p>
+                                                        <p class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="f-12 text-end">0:10 Min</td>
+                                        </tr>
+                                        <tr class="table-song-list">
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <div class="auto-fr gap-2">
+                                                    <div
+                                                        class="w-48px ratio position-relative ratio-1x1 rounded-2 overflow-hidden">
+                                                        <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728"
+                                                            alt="">
+                                                        <div class="position-absolute table-song-list-play-option">
+                                                            <svg class="ic-20 text-white">
+                                                                <use xlink:href="img/icon_sprite.svg#ic-play" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-grid">
+                                                        <p class="f-15 text-light-emphasis text-truncate">A.R. Rahman
+                                                            Shakthisree Gopalan
+                                                        </p>
+                                                        <p class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="f-12 text-end">0:10 Min</td>
+                                        </tr>
+                                        <tr class="table-song-list">
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <div class="auto-fr gap-2">
+                                                    <div
+                                                        class="w-48px ratio position-relative ratio-1x1 rounded-2 overflow-hidden">
+                                                        <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728"
+                                                            alt="">
+                                                        <div class="position-absolute table-song-list-play-option">
+                                                            <svg class="ic-20 text-white">
+                                                                <use xlink:href="img/icon_sprite.svg#ic-play" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-grid">
+                                                        <p class="f-15 text-light-emphasis text-truncate">A.R. Rahman
+                                                            Shakthisree Gopalan
+                                                        </p>
+                                                        <p class="f-13 text-truncate">A.R. Rahman Shakthisree Gopalan
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="f-12 text-end">0:10 Min</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="js/ripple.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+
+</html>

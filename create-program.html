@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="scss/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="main-header bg-dark-subtle">
+            <svg class="ic-24 text-light">
+                <use xlink:href="img/icon_sprite.svg#ic-menu" />
+            </svg>
+            <a href="/" class="main-logo">
+                <img src="/img/logo.svg" alt="logo">
+            </a>
+            <div class="g-h-middle">
+                <div class="search-box w-420">
+                    <div class="icon-container">
+                        <svg class="ic-20 text-white">
+                            <use xlink:href="img/icon_sprite.svg#ic-search"></use>
+                        </svg>
+                    </div>
+                    <input type="search" class="form-control form-control-md" placeholder="Search across our channel">
+                </div>
+            </div>
+            <div class="d-flex gap-4 align-items-center">
+                <a href="" class="cursor-pointer">
+                    <svg class="ic-24 text-light">
+                        <use xlink:href="img/icon_sprite.svg#ic-bell" />
+                    </svg>
+                </a>
+                <div class="dropdown">
+                    <div class="avatar-5 cursor-pointer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/avatar.jpeg" alt="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-section bg-dark-subtle">
+            <aside class="main-left-menu h-100 bg-dark-subtle">
+                <ul class="main-menu pt-5">
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-home" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-schedule" />
+                            </svg>
+                            Schedule
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-program" />
+                            </svg>
+                            Programs
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-media" />
+                            </svg>
+                            Media
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-users" />
+                            </svg>
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-settings" />
+                            </svg>
+                            Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="ic-24">
+                                <use xlink:href="img/icon_sprite.svg#ic-online" />
+                            </svg>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="main-content p-0 row-auto-fr-auto overflow-auto is-playing-show">
+
+                <div class="px-4 pt-3 pb-3 align-items-center border-bottom">
+                    <div>
+                        <h4 class="text-light-emphasis m-0">Create Schedule</h4>
+                        <p>Explore thousands of free and paid templates</p>
+                    </div>
+                </div>
+                <!-- end header -->
+
+                <div class="border-bottom create-program-layout">
+                    <div class="border-end p-3">
+                        <form class="d-grid gap-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Program Title</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Program Duration</label>
+                            </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected>Owner</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelect">Works with selects</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Schedule Date</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="time" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Schedule Time</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    style="height: 100px">Short description of program</textarea>
+                                <label>About Program</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row-auto-fr">
+                        <div class="border-bottom p-3 d-grid align-items-center">
+                            <h6 class="mb-0 text-light-emphasis">Select Songs</h6>
+                        </div>
+                        <div class="fr-fr p-1 gap-2">
+                            <div class="overflow-auto h-100">
+                                <div class="box-style rounded-4 h-100">
+                                    <div class="box-style rounded-4 h-100 row-auto-fr">
+                                        <div
+                                            class="px-3 pt-3 fr-auto border-bottom justify-content-start align-items-center pb-4">
+                                            <h6 class="text-white m-0">Timeline</h6>
+                                            <h6>30/150 Mins</h6>
+                                        </div>
+                                        <div class="d-grid align-content-start">
+                                            <table class="table m-0 h-100-auto">
+                                                <thead class="f-11">
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">TITLES</th>
+                                                        <th scope="col">ARTIST</th>
+                                                        <th scope="col">LAST PLAYED</th>
+                                                        <th scope="col">DURATION</th>
+                                                        <th scope="col"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="f-14">
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>
+                                                            <div class="g-col justify-content-start gap-2">
+                                                                <div
+                                                                    class="w-48px ratio position-relative ratio-1x1 rounded-2 overflow-hidden">
+                                                                    <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728"
+                                                                        alt="">
+                                                                    <div
+                                                                        class="position-absolute table-song-list-play-option">
+                                                                        <svg class="ic-20 text-white">
+                                                                            <use
+                                                                                xlink:href="img/icon_sprite.svg#ic-play" />
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="text-truncate">
+                                                                    <div
+                                                                        class="fw-medium f-15 text-light text-truncate">
+                                                                        Jo bhi main</div>
+                                                                    <span
+                                                                        class="f-13 text-body text-truncate">Rockstar</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Mohit Chauhan</td>
+                                                        <td>2 Days ago</td>
+                                                        <td>3:22</td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-icon-sm ripples">
+                                                                <svg class="ic-20 text-white">
+                                                                    <use xlink:href="img/icon_sprite.svg#ic-minus-2" />
+                                                                </svg>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="overflow-auto h-100">
+                                    <div class="box-style rounded-4 h-100">
+                                        <div class="box-style rounded-4 h-100 row-auto-auto-fr">
+                                            <div
+                                                class="px-3 pt-3 auto-fr justify-content-start align-items-center pb-4">
+                                                <h6 class="text-white m-0">Playlist</h6>
+                                                <div class="g-col align-items-center justify-content-end gap-2">
+                                                    <div class="search-style">
+                                                        <div class="icon-container">
+                                                            <svg class="ic-20 text-white">
+                                                                <use xlink:href="img/icon_sprite.svg#ic-search"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <input type="search" class="form-control form-control-sm"
+                                                            placeholder="Search Songs">
+                                                    </div>
+                                                    <svg class="ic-24 text-white">
+                                                        <use xlink:href="img/icon_sprite.svg#ic-filter"></use>
+                                                    </svg>
+                                                    <svg class="ic-24 text-white">
+                                                        <use xlink:href="img/icon_sprite.svg#ic-more-box"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <!-- end header -->
+                                            <ul class="rounded-chips px-2 pb-2">
+                                                <li class="active">
+                                                    <a href="">Songs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Ads</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Bgm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Comics</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Comics</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Comics</a>
+                                                </li>
+                                            </ul>
+                                            <!-- end chips -->
+                                            <div class="p-2 h-100-auto">
+                                                <div class="bg-body h-100-auto">
+                                                    <table class="table m-0 h-100-auto">
+                                                        <thead class="f-11">
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">TITLES</th>
+                                                                <th scope="col">ARTIST</th>
+                                                                <th scope="col">LAST PLAYED</th>
+                                                                <th scope="col">DURATION</th>
+                                                                <th scope="col"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="f-14">
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>
+                                                                    <div class="g-col justify-content-start gap-2">
+                                                                        <div
+                                                                            class="w-48px ratio position-relative ratio-1x1 rounded-2 overflow-hidden">
+                                                                            <img src="https://i.scdn.co/image/ab67706f00000002db9d81d8593b000f90f8c728"
+                                                                                alt="">
+                                                                            <div
+                                                                                class="position-absolute table-song-list-play-option">
+                                                                                <svg class="ic-20 text-white">
+                                                                                    <use
+                                                                                        xlink:href="img/icon_sprite.svg#ic-play" />
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-truncate">
+                                                                            <div
+                                                                                class="fw-medium f-15 text-light text-truncate">
+                                                                                Jo bhi main</div>
+                                                                            <span
+                                                                                class="f-13 text-body text-truncate">Rockstar</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Mohit Chauhan</td>
+                                                                <td>2 Days ago</td>
+                                                                <td>3:22</td>
+                                                                <td>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary btn-icon-sm ripples">
+                                                                        <svg class="ic-20 text-white">
+                                                                            <use
+                                                                                xlink:href="img/icon_sprite.svg#ic-add-2" />
+                                                                        </svg>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 d-flex gap-2">
+                    <button type="button" class="btn btn-primary px-4 ripples" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Schedule
+                    </button>
+                    <button type="button" class="btn px-4 ripples" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cancel
+                    </button>
+                </div>
+            </section>
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="js/ripple.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+
+</html>

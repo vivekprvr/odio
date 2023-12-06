@@ -1,0 +1,42 @@
+.schedule-list {
+    cursor: pointer;
+    &.active,&:hover {
+        background: var(--bs-secondary-bg);
+    }
+
+    &.active {
+        h6 {
+            color: var(--bs-primary-text-emphasis) !important;
+        }
+    }
+}
+
+.schedule-layout {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+}
+
+.schedule-detail-header {
+    height: 300px;
+}
+
+.table-song-list-play-option {
+    opacity: 0;
+    display: grid;
+    place-content: center;
+}
+
+.table-song-list {
+    cursor: pointer;
+    &:hover {
+        .table-song-list-play-option {
+            opacity: 1;
+        }
+        background: var(--bs-secondary-bg);
+    }
+}
+
+.create-program-layout {
+    display: grid;
+    grid-template-columns: minmax(200px, 400px) 1fr;
+}
